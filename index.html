@@ -1762,8 +1762,43 @@
 												<div class="form-group no-gutter">
 													<label class="control-label" for="municipioencuestado">Municipio</label>
 													<div class="col-md-10 form-inline">
-														<input class="form-control"  autocomplete="off" type="text" name="municipioencuestado" id="municipioencuestado" value="" >
-														<button type="button" class="btn btn-default" id="municipioencuestadoNC" >N.C.</button>
+														<select name="municipioencuestado" id="municipioencuestado" class="form-control">
+															<option data-placeholder="true" value="0">Municipio</option>
+                                                                                    <option value="Amacuzac">Amacuzac</option>
+                                                                                    <option value="Atlatlahucan">Atlatlahucan</option>
+                                                                                    <option value="Axochiapan">Axochiapan</option>
+                                                                                    <option value="Ayala">Ayala</option>
+                                                                                    <option value="Coatlán del Río">Coatlán del Río</option>
+                                                                                    <option value="Cuautla">Cuautla</option>
+                                                                                    <option value="Cuernavaca">Cuernavaca</option>
+                                                                                    <option value="Emiliano Zapata">Emiliano Zapata</option>
+                                                                                    <option value="Huitzilac">Huitzilac</option>
+                                                                                    <option value="Jantetelco">Jantetelco</option>
+                                                                                    <option value="Jiutepec">Jiutepec</option>
+                                                                                    <option value="Jojutla">Jojutla</option>
+                                                                                    <option value="Jonacatepec">Jonacatepec</option>
+                                                                                    <option value="Mazatepec">Mazatepec</option>
+                                                                                    <option value="Miacatlán">Miacatlán</option>
+                                                                                    <option value="Ocuituco">Ocuituco</option>
+                                                                                    <option value="Puente de Ixtla">Puente de Ixtla</option>
+                                                                                    <option value="Temixco">Temixco</option>
+                                                                                    <option value="Temoac">Temoac</option>
+                                                                                    <option value="Tepalcingo">Tepalcingo</option>
+                                                                                    <option value="Tepoztlán">Tepoztlán</option>
+                                                                                    <option value="Tetecala">Tetecala</option>
+                                                                                    <option value="Tetela del Volcán">Tetela del Volcán</option>
+                                                                                    <option value="Tlalnepantla">Tlalnepantla</option>
+                                                                                    <option value="Tlaltizapán">Tlaltizapán</option>
+                                                                                    <option value="Tlaquiltenango">Tlaquiltenango</option>
+                                                                                    <option value="Tlayacapan">Tlayacapan</option>
+                                                                                    <option value="Totolapan">Totolapan</option>
+                                                                                    <option value="Xochitepec">Xochitepec</option>
+                                                                                    <option value="Yautepec">Yautepec</option>
+                                                                                    <option value="Yecapixtla">Yecapixtla</option>
+                                                                                    <option value="Zacatepec de Hidalgo">Zacatepec de Hidalgo</option>
+                                                                                    <option value="Zacualpan de Amilpas">Zacualpan de Amilpas</option>
+                                                                                <option data-placeholder="true" value="Sin especificar">Sin especificar</option>
+                                    </select>
 													</div>
 												</div>
 												<div class="form-group no-gutter">
@@ -1927,9 +1962,7 @@ $("#mismopartido").slider({
                                                 $("#seccionEncuestado").val('Sin especificar');
                                             });
 
-                                            $("#myWizard").on("click", "#municipioencuestadoNC", function(event) {
-                                                $("#municipioencuestado").val('Sin especificar');
-                                            });
+                                           
 											 $("#myWizard").on("click", "#ciudadencuestadoNC", function(event) {
                                                 $("#ciudadencuestado").val('Sin especificar');
                                             });
