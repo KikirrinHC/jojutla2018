@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ETP Soluciones</title>
+		<meta name="description" content="ETP Soluciones" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="ETP Soluciones" />
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="css/animate.css" rel="stylesheet" media="screen">
+
+		<!-- date range -->
+		<link rel="stylesheet" type="text/css" href="css/daterange.css">
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen">
+
+		<!-- Slidebar CSS -->
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+
+		<!-- Easy Wizard -->
+		<link href="css/easy-wizard/jquery.snippet.min.css" rel="stylesheet">
+		<link href="css/easy-wizard/styles.css" rel="stylesheet" media="screen">
+
+		<!-- Font Awesome -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Slider by eyecon -->
+		<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+
+		<!-- Metrize Fonts -->
+		<link href="fonts/metrize.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+<link href="css/spinner.css" rel="stylesheet">
+		<link href="css/myclass.css" rel="stylesheet">
+	</head>  
+
+	<body onload="onLoad()">
+
+		<!-- Left sidebar start -->
+		<aside id="sidebar">
+
+			<!-- alerto starts -->
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			<!-- alerto ends -->
+<!-- Menu start -->
+			<div id='menu'>
+				<ul>
+					
+					<li class='highlight active'>
+						<a href='index.html'>
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Encuesta</span>
+						</a>
+					</li>
+					<li>
+						<a href='carga.html' >
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Carga de información</span>
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			<!-- Menu End -->
+		</aside>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper">
+
+			<!-- Header start -->
+			<header>
+				
+				<div class="pull-right">
+					<ul id="mini-nav" class="clearfix">
+						
+						<li class="list-box hidden-lg hidden-md hidden-sm" id="mob-nav">
+							<a href="#">
+								<i class="fa fa-reorder"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- Header ends -->
+
+		
+			<!-- Main Container Start -->
+			<div class="main-container survey">
+
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="page-title">
+						<h4><div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>ESTUDIO DE TENDENCIAS DE OPINIÓN CIUDADANA.</h4>
+					</div>
+					
+				</div>
+				<!-- Top Bar Ends -->
+
+				<!-- Container fluid Starts -->
+				<div class="container-fluid">
+
+					<!-- Spacer starts -->
+					<div class="spacer-xs">
+
+						
+						<!-- Row start -->
+						<div class="row no-gutter">
+							<div class="col-md-12 col-xs-12" >
+							
+										<form id="myWizard" class="form">
+										<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Datos Generales">
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="generoEncuestado">1.- Sexo:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="hombre" name="generoEncuestado" value="Masculino">Masculino</label>
+															<label class="btn btn-default"><input type="radio" id="mujer" name="generoEncuestado" value="Femenino">Femenino</label>
+															<label class="btn btn-default"><input type="radio" id="generoNC" name="generoEncuestado" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddengeneroEncuestado" name="hiddengeneroEncuestado">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="edadEncuestado">2.- Edad</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="edadEncuestado" id="edadEncuestado" value="" >
+													</div>
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="estudiosencuestado">3.- Escolaridad</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado1" name="estudiosencuestado" value="Sin escolaridad">1.- Sin escolaridad</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado2" name="estudiosencuestado" value="Primaria incompleta">2.- Primaria incompleta</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado3" name="estudiosencuestado" value="Primaria completa">3.- Primaria completa</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado4" name="estudiosencuestado" value="Secundaria incompleta">4.- Secundaria incompleta</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado5" name="estudiosencuestado" value="Secundaria completa">5.- Secundaria completa</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado6" name="estudiosencuestado" value="Técnica completa">6.- Técnica completa</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado7" name="estudiosencuestado" value="Técnica incompleta">7.- Técnica incompleta</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado8" name="estudiosencuestado" value="Universitaria incompleta">8.- Universitaria incompleta</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado9" name="estudiosencuestado" value="Universitaria incompleta">9.- Universitario completa</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado10" name="estudiosencuestado" value="Posgrado">10.- Posgrado</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestadoNSNC" name="estudiosencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenestudiosencuestado" name="hiddenestudiosencuestado">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="origenencuestado">4.- ¿En donde nació?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="origenencuestado1" name="origenencuestado" value="En Jojutla">1.- En Jojutla</label>
+															<label class="btn btn-default"><input type="radio" id="origenencuestado2" name="origenencuestado" value="En otro municipio de Morelos">2.- En otro municipio de Morelos</label>
+															<label class="btn btn-default"><input type="radio" id="origenencuestado3" name="origenencuestado" value="En Cuernavaca">3.- En Cuernavaca</label>
+															<label class="btn btn-default"><input type="radio" id="origenencuestado4" name="origenencuestado" value="En otro municipio de México">4.- En otro municipio de México</label>
+															<label class="btn btn-default"><input type="radio" id="origenencuestadoNSNC" name="origenencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenorigenencuestado" name="hiddenorigenencuestado">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="hijosEncuestado">5.- ¿Tiene hijos menores de 18 años?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="hijosEncuestado1" name="hijosEncuestado" value="Si">1.- Si</label>
+															<label class="btn btn-default"><input type="radio" id="hijosEncuestado2" name="hijosEncuestado" value="No">2.- No</label>
+															<label class="btn btn-default"><input type="radio" id="hijosEncuestadoNC" name="hijosEncuestado" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenhijosEncuestado" name="hiddenhijosEncuestado">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="estadocivilEncuestado">6.- Estado civil</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="estadocivilEncuestado1" name="estadocivilEncuestado" value="Casado">1.- Casado</label>
+															<label class="btn btn-default"><input type="radio"  id="estadocivilEncuestado2" name="estadocivilEncuestado" value="Soltero">2.- Soltero</label>
+															<label class="btn btn-default"><input type="radio"  id="estadocivilEncuestado3" name="estadocivilEncuestado" value="Separado/divorciado">3.- Separado/divorciado</label>
+															<label class="btn btn-default"><input type="radio"  id="estadocivilEncuestado4" name="estadocivilEncuestado" value="Unión de hecho">4.- Unión de hecho</label>
+															<label class="btn btn-default"><input type="radio"  id="estadocivilEncuestado5" name="estadocivilEncuestado" value="Viudo">5.- Viudo</label>
+															<label class="btn btn-default"><input type="radio" id="estadocivilEncuestadoNC" name="estadocivilEncuestado" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenestadocivilEncuestado" name="hiddenestadocivilEncuestado">
+												</div>
+												
+											</section>
+											
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Calificación de autoridades">
+												<label class="" for="">Del 0 al 10, donde 0 significa que ha hecho un muy mal trabajo y 10 que ha hecho un muy buen trabajo, ¿qué calificación le da a...?</label>
+													
+												<div class="form-group no-gutter">
+													<label class="control-label" for="calificacionalcalde">A.- El Presidente Municipal, Alfonso de Jesús Sotelo (Ponchito)</label>
+													<div>
+														<input id="calificacionalcalde" type="text" data-slider-ticks="[0,1,2,3,4,5,6,7,8,9,10]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10"]'/>
+														</div>
+													<input type="hidden" value="" id="hiddencalificacionalcalde" name="hiddencalificacionalcalde">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="calificaciongobernador">B.- El Gobernador de Morelos, Graco Ramírez Garrido</label>
+													<div>
+														<input id="calificaciongobernador" type="text" data-slider-ticks="[0,1,2,3,4,5,6,7,8,9,10]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10"]'/>
+														</div>
+													<input type="hidden" value="" id="hiddencalificaciongobernador" name="hiddencalificaciongobernador">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="calificacionpresidente">C.- El Presidente de México, Enrique Peña Nieto</label>
+													<div>
+														<input id="calificacionpresidente" type="text" data-slider-ticks="[0,1,2,3,4,5,6,7,8,9,10]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10"]'/>
+														</div>
+													<input type="hidden" value="" id="hiddencalificacionpresidente" name="hiddencalificacionpresidente">
+												</div>
+												
+											</section>
+											
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Imagen Presidente Municipal">
+													
+												<div class="form-group no-gutter">
+													<label class="control-label" for="opinionalcalde">7.- ¿Qué imagen tiene del Presidente Municipal, Alfonso de Jesús Sotelo (Ponchito)</label>
+													<div>
+														<div class="btn-group-vertical" data-toggle="buttons">
+															<label class="btn btn-default">
+																<input type="radio" id="opinionalcalde1" name="opinionalcalde" value="Muy buena">Muy buena
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="opinionalcalde2" name="opinionalcalde" value="Buena">Buena
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="opinionalcalde3" name="opinionalcalde" value="Mala">Mala
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="opinionalcalde4" name="opinionalcalde" value="Muy mala">Muy mala
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="opinionalcaldeNSNC" name="opinionalcalde" value="N.S. - N.C.">N.S. - N.C.
+															</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenopinionalcalde" name="hiddenopinionalcalde">
+												</div>
+												
+											</section>
+																			
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Problemática">
+											<label class="" for="problemas">8.- Mencione 3 de los siguientes temas que usted considere que son los más urgentes de resolver en Jojutla</label>
+													
+												<div class="form-group no-gutter">
+													<label class="control-label" for="problemas1">Primera mención</label>
+													<div>
+														<select name="problemas1" id="problemas1" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="Inseguridad">Inseguridad</option>
+															<option value="Reconstrucción de Jojutla">Reconstrucción de Jojutla</option>
+															<option value="Generación de nuevos empleos">Generación de nuevos empleos</option>
+															<option value="Pavimentación de calles y avenidas">Pavimentación de calles y avenidas</option>
+															<option value="Escuelas y educación">Escuelas y educación</option>
+															<option value="Alumbrado público">Alumbrado público</option>
+															<option value="Mejoras en el tráfico">Mejoras en el tráfico</option>
+															<option value="Recolección de basura">Recolección de basura</option>
+															<option value="Programa de prevención social y rescate a nuestros jóvenes">Programa de prevención social y rescate a nuestros jóvenes</option>
+															<option value="Apoyo al sector agrícola">Apoyo al sector agrícola</option>
+															<option value="Mala atención al usuario de parte de la municipalidad">Mala atención al usuario de parte de la municipalidad</option>
+															<option value="Internet público">Internet público</option>
+															<option value="Mejoras en el transporte público">Mejoras en el transporte público</option>
+															<option value="Construcción de plazas, parques y lugares de recreación">Construcción de plazas, parques y lugares de recreación</option>
+															<option value="Mercados y comerciantes informales">Mercados y comerciantes informales</option>
+															<option value="Impuestos municipales">Impuestos municipales</option>
+															<option value="Recuperación de la feria">La recuperación de la feria</option>
+															<option value="Rescate del sector turístico">Rescate del sector turístico de Jojutla</option>
+															<option value="Otros">Otros</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="" id="divProblema1Cual" style="display: none;" align="">
+													<div class="form-group no-gutter">
+														<label class="control-label" for="Problema1Cual">¿Cuál?</label>
+														<div class="input-group">
+															<input class="form-control" autocomplete="off" type="text" name="Problema1Cual" id="Problema1Cual" value="" >
+															<span class="input-group-btn">
+																<button type="button" class="btn btn-default" id="Problema1NC" >N.C.</button>
+															</span>
+														</div><!-- /input-group -->
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="problemas2">Segunda mención</label>
+													<div>
+														<select name="problemas2" id="problemas2" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="Inseguridad">Inseguridad</option>
+															<option value="Reconstrucción de Jojutla">Reconstrucción de Jojutla</option>
+															<option value="Generación de nuevos empleos">Generación de nuevos empleos</option>
+															<option value="Pavimentación de calles y avenidas">Pavimentación de calles y avenidas</option>
+															<option value="Escuelas y educación">Escuelas y educación</option>
+															<option value="Alumbrado público">Alumbrado público</option>
+															<option value="Mejoras en el tráfico">Mejoras en el tráfico</option>
+															<option value="Recolección de basura">Recolección de basura</option>
+															<option value="Programa de prevención social y rescate a nuestros jóvenes">Programa de prevención social y rescate a nuestros jóvenes</option>
+															<option value="Apoyo al sector agrícola">Apoyo al sector agrícola</option>
+															<option value="Mala atención al usuario de parte de la municipalidad">Mala atención al usuario de parte de la municipalidad</option>
+															<option value="Internet público">Internet público</option>
+															<option value="Mejoras en el transporte público">Mejoras en el transporte público</option>
+															<option value="Construcción de plazas, parques y lugares de recreación">Construcción de plazas, parques y lugares de recreación</option>
+															<option value="Mercados y comerciantes informales">Mercados y comerciantes informales</option>
+															<option value="Impuestos municipales">Impuestos municipales</option>
+															<option value="Recuperación de la feria">La recuperación de la feria</option>
+															<option value="Rescate del sector turístico">Rescate del sector turístico de Jojutla</option>
+															<option value="Otros">Otros</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="" id="divProblema2Cual" style="display: none;" align="">
+													<div class="form-group no-gutter">
+														<label class="control-label" for="Problema2Cual">¿Cuál?</label>
+														<div class="input-group">
+															<input class="form-control" autocomplete="off" type="text" name="Problema2Cual" id="Problema2Cual" value="" >
+															<span class="input-group-btn">
+																<button type="button" class="btn btn-default" id="Problema2NC" >N.C.</button>
+															</span>
+														</div><!-- /input-group -->
+													</div>
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="problemas3">Tercera mención</label>
+													<div>
+														<select name="problemas3" id="problemas3" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="Inseguridad">Inseguridad</option>
+															<option value="Reconstrucción de Jojutla">Reconstrucción de Jojutla</option>
+															<option value="Generación de nuevos empleos">Generación de nuevos empleos</option>
+															<option value="Pavimentación de calles y avenidas">Pavimentación de calles y avenidas</option>
+															<option value="Escuelas y educación">Escuelas y educación</option>
+															<option value="Alumbrado público">Alumbrado público</option>
+															<option value="Mejoras en el tráfico">Mejoras en el tráfico</option>
+															<option value="Recolección de basura">Recolección de basura</option>
+															<option value="Programa de prevención social y rescate a nuestros jóvenes">Programa de prevención social y rescate a nuestros jóvenes</option>
+															<option value="Apoyo al sector agrícola">Apoyo al sector agrícola</option>
+															<option value="Mala atención al usuario de parte de la municipalidad">Mala atención al usuario de parte de la municipalidad</option>
+															<option value="Internet público">Internet público</option>
+															<option value="Mejoras en el transporte público">Mejoras en el transporte público</option>
+															<option value="Construcción de plazas, parques y lugares de recreación">Construcción de plazas, parques y lugares de recreación</option>
+															<option value="Mercados y comerciantes informales">Mercados y comerciantes informales</option>
+															<option value="Impuestos municipales">Impuestos municipales</option>
+															<option value="Recuperación de la feria">La recuperación de la feria</option>
+															<option value="Rescate del sector turístico">Rescate del sector turístico de Jojutla</option>
+															<option value="Otros">Otros</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="" id="divProblema3Cual" style="display: none;" align="">
+													<div class="form-group no-gutter">
+														<label class="control-label" for="Problema3Cual">¿Cuál?</label>
+														<div class="input-group">
+															<input class="form-control" autocomplete="off" type="text" name="Problema3Cual" id="Problema3Cual" value="" >
+															<span class="input-group-btn">
+																<button type="button" class="btn btn-default" id="Problema3NC" >N.C.</button>
+															</span>
+														</div><!-- /input-group -->
+													</div>
+												</div>
+											</section>
+																			
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Elecciones 2018">
+												
+												<label class="" for="">9.- Del 1 al 10, donde 1 significa no estoy nada seguro y 10 estoy totalmente seguro...</label>
+													
+												<div class="form-group no-gutter">
+													<label class="control-label" for="segurovoto">¿qué tan seguro está usted de que así va a votar el 1 de julio y no va a cambiar de opinion?</label>
+													<div>
+														<input id="segurovoto" type="text" data-slider-ticks="[1,2,3,4,5,6,7,8,9,10]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["1","2", "3", "4", "5", "6", "7", "8", "9", "10"]'/>
+														</div>
+													<input type="hidden" value="" id="hiddensegurovoto" name="hiddensegurovoto">
+												</div>
+											
+											
+											
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votopresidente">10.- Si hoy fueran las elecciones, ¿por quién de estos candidatos votaría para Presidente de México?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente1" name="votopresidente" value="Andrés Manuel López Obrador">Andrés Manuel López Obrador</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente2" name="votopresidente" value="José Antonio Meade">José Antonio Meade</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente3" name="votopresidente" value="Ricardo Anaya">Ricardo Anaya</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente4" name="votopresidente" value="Jaime Rodríguez El Bronco">Jaime Rodríguez El Bronco</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente5" name="votopresidente" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente6" name="votopresidente" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votopresidente7" name="votopresidente" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotopresidente" name="hiddenvotopresidente">
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votogobernador">11.- Si hoy fueran las elecciones, ¿por quién de estos candidatos votaría para Gobernador de Morelos?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador1" name="votogobernador" value="Víctor Caballero">Víctor Caballero</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador2" name="votogobernador" value="Jorge Meade Ocaranza">Jorge Meade Ocaranza</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador3" name="votogobernador" value="Rodrigo Gayosso">Rodrigo Gayosso</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador4" name="votogobernador" value="Nadia Luz Lara">Nadia Luz Lara</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador5" name="votogobernador" value="Cuauhtémoc Blanco">Cuauhtémoc Blanco</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador6" name="votogobernador" value="Alejandro Vera Jiménez">Alejandro Vera Jiménez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador7" name="votogobernador" value="Mario Rojas Alba">Mario Rojas Alba</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador8" name="votogobernador" value="Fidel Demédicis Hidalgo">Fidel Demédicis Hidalgo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador9" name="votogobernador" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador10" name="votogobernador" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votogobernador11" name="votogobernador" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotogobernador" name="hiddenvotogobernador">
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votosenadores">12.- Si hoy fueran las elecciones, ¿por cuál de las siguientes fórmulas votaría para senadores por Morelos?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores1" name="votosenadores" value="Ángel García Yáñez y Lilia Ibarra Campos">Ángel García Yáñez y Lilia Ibarra Campos</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores2" name="votosenadores" value="Lucía Virgina Meza y Radamés Salazar Solorio">Lucía Virgina Meza y Radamés Salazar Solorio</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores3" name="votosenadores" value="Erika Cortés Martínez y José Francisco Aguilar">Erika Cortés Martínez y José Francisco Aguilar</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores4" name="votosenadores" value="Hortencia Figueroa Peralta y Ricardo Calvo Huerta">Hortencia Figueroa Peralta y Ricardo Calvo Huerta</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores5" name="votosenadores" value="Jessica María Guadalupe Ortega y José Álvarez Icaza">Jessica María Guadalupe Ortega y José Álvarez Icaza</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores6" name="votosenadores" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores7" name="votosenadores" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenadores8" name="votosenadores" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotosenadores" name="hiddenvotosenadores">
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votosenado">13.- Si hoy fueran las elecciones, ¿por quién de estos candidatos votaría para Senador de Morelos?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado1" name="votosenado" value="Víctor Caballero">Víctor Caballero</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado2" name="votosenado" value="Jorge Meade Ocaranza">Jorge Meade Ocaranza</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado3" name="votosenado" value="Rodrigo Gayosso">Rodrigo Gayosso</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado4" name="votosenado" value="Nadia Luz Lara">Nadia Luz Lara</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado5" name="votosenado" value="Cuauhtémoc Blanco">Cuauhtémoc Blanco</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado6" name="votosenado" value="Alejandro Vera Jiménez">Alejandro Vera Jiménez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado7" name="votosenado" value="Mario Rojas Alba">Mario Rojas Alba</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado8" name="votosenado" value="Fidel Demédicis Hidalgo">Fidel Demédicis Hidalgo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado9" name="votosenado" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado10" name="votosenado" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votosenado11" name="votosenado" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotosenado" name="hiddenvotosenado">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votodiputadofederal">14.- Si hoy fueran las elecciones, ¿por quién de estos candidatos votaría para Diputado Federal?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal1" name="votodiputadofederal" value="Gerardo Vargas Salgado">Gerardo Vargas Salgado</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal2" name="votodiputadofederal" value="Julio Espin Navarrete">Julio Espin Navarrete</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal3" name="votodiputadofederal" value="Laura Gutiérrez Urquidez">Laura Gutiérrez Urquidez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal4" name="votodiputadofederal" value="Jorge Morales Barud">Jorge Morales Barud</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal5" name="votodiputadofederal" value="Jorge Arturo Arguelles">Jorge Arturo Arguelles</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal6" name="votodiputadofederal" value="Enrique Alonso Plascencia">Enrique Alonso Plascencia</label>
+														</div>
+														
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal9" name="votodiputadofederal" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal10" name="votodiputadofederal" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadofederal11" name="votodiputadofederal" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotodiputadofederal" name="hiddenvotodiputadofederal">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votodiputadolocal">15.- Si hoy fueran las elecciones, ¿por quién de estos candidatos votaría para Diputado Local?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal1" name="votodiputadolocal" value="Alejandro Cadenas (Profesor Chino)">Alejandro Cadenas (Profesor Chino)</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal2" name="votodiputadolocal" value="Juan Manuel Bandera (Bandera)">Juan Manuel Bandera (Bandera)</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal3" name="votodiputadolocal" value="Verónica Suazo (Vero Suazo)">Verónica Suazo (Vero Suazo)</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal4" name="votodiputadolocal" value="José Luis Rayo Armenta">José Luis Rayo Armenta</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal5" name="votodiputadolocal" value="Alfonso de Jesús Sotelo (Ponchito)">Alfonso de Jesús Sotelo (Ponchito)</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal6" name="votodiputadolocal" value="Rosalina Pacheco (Lina Pacheco)">Rosalina Pacheco (Lina Pacheco)</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal7" name="votodiputadolocal" value="Jaime Sánchez">Jaime Sánchez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal8" name="votodiputadolocal" value="María Guadalupe Ordoñez">María Guadalupe Ordoñez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal9" name="votodiputadolocal" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal10" name="votodiputadolocal" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votodiputadolocal11" name="votodiputadolocal" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotodiputadolocal" name="hiddenvotodiputadolocal">
+												</div>
+												
+												<label class="" for="">16.- Hay algunos personajes que buscan ser Presidente Municipal de Jojutla, ¿a quién conoce o ha oído nombrar?, ¿de qué partido político son? y ¿qué opinión tiene de ellos?  </label>
+											
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceRobertoCordova">1.- Roberto Córdova</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceRobertoCordova1" name="conoceRobertoCordova" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceRobertoCordova2" name="conoceRobertoCordova" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceRobertoCordova3" name="conoceRobertoCordova" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceRobertoCordova" name="hiddenconoceRobertoCordova">
+													<label class="control-label" for="partidoRobertoCordova">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoRobertoCordova" id="partidoRobertoCordova" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+																<div class="btn-group" data-toggle="buttons">
+																	<label class="btn btn-success btn-sm" for="opinionRobertoCordovaMB">
+																		<input type="radio" id="opinionRobertoCordovaMB" name="opinionRobertoCordova" value="Muy Buena">Muy buena
+																	</label> 
+																	<label class="btn btn-success btn-sm" for="opinionRobertoCordovaB">
+																		<input type="radio" id="opinionRobertoCordovaB" name="opinionRobertoCordova" value="Buena">Buena
+																	</label> 
+																	<label class="btn btn-warning btn-sm" for="opinionRobertoCordovaR">
+																		<input type="radio" id="opinionRobertoCordovaR" name="opinionRobertoCordova" value="Regular">Regular
+																	</label> 
+																	<label class="btn btn-danger btn-sm" for="opinionRobertoCordovaM">
+																		<input type="radio" id="opinionRobertoCordovaM" name="opinionRobertoCordova" value="Mala">Mala
+																	</label> 
+																	<label class="btn btn-danger btn-sm" for="opinionRobertoCordovaMM">
+																		<input type="radio" id="opinionRobertoCordovaMM" name="opinionRobertoCordova" value="Muy mala">Muy mala
+																	</label> 
+																	<label class="btn btn-default btn-sm" for="opinionRobertoCordovaNC">
+																		<input type="radio" id="opinionRobertoCordovaNC" name="opinionRobertoCordova" value="No contestó">N.C.
+																	</label> 
+
+																</div>
+																<input type="hidden" value="" id="hiddenopinionRobertoCordova" name="hiddenopinionRobertoCordova">
+
+															</div>
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceAraceliGarduno">2.- Araceli Garduño Gaffare</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceAraceliGarduno1" name="conoceAraceliGarduno" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceAraceliGarduno2" name="conoceAraceliGarduno" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceAraceliGarduno3" name="conoceAraceliGarduno" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceAraceliGarduno" name="hiddenconoceAraceliGarduno">
+													<label class="control-label" for="partidoAraceliGarduno">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoAraceliGarduno" id="partidoAraceliGarduno" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionAraceliGardunoMB">
+																<input type="radio" id="opinionAraceliGardunoMB" name="opinionAraceliGarduno" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionAraceliGardunoB">
+																<input type="radio" id="opinionAraceliGardunoB" name="opinionAraceliGarduno" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionAraceliGardunoR">
+																<input type="radio" id="opinionAraceliGardunoR" name="opinionAraceliGarduno" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionAraceliGardunoM">
+																<input type="radio" id="opinionAraceliGardunoM" name="opinionAraceliGarduno" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionAraceliGardunoMM">
+																<input type="radio" id="opinionAraceliGardunoMM" name="opinionAraceliGarduno" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionAraceliGardunoNC">
+																<input type="radio" id="opinionAraceliGardunoNC" name="opinionAraceliGarduno" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionAraceliGarduno" name="hiddenopinionAraceliGarduno">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceFranciscoEspin">3.- Francisco Espín Roldan</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceFranciscoEspin1" name="conoceFranciscoEspin" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceFranciscoEspin2" name="conoceFranciscoEspin" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceFranciscoEspin3" name="conoceFranciscoEspin" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceFranciscoEspin" name="hiddenconoceFranciscoEspin">
+													<label class="control-label" for="partidoFranciscoEspin">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoFranciscoEspin" id="partidoFranciscoEspin" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionFranciscoEspinMB">
+																<input type="radio" id="opinionFranciscoEspinMB" name="opinionFranciscoEspin" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionFranciscoEspinB">
+																<input type="radio" id="opinionFranciscoEspinB" name="opinionFranciscoEspin" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionFranciscoEspinR">
+																<input type="radio" id="opinionFranciscoEspinR" name="opinionFranciscoEspin" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionFranciscoEspinM">
+																<input type="radio" id="opinionFranciscoEspinM" name="opinionFranciscoEspin" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionFranciscoEspinMM">
+																<input type="radio" id="opinionFranciscoEspinMM" name="opinionFranciscoEspin" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionFranciscoEspinNC">
+																<input type="radio" id="opinionFranciscoEspinNC" name="opinionFranciscoEspin" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionFranciscoEspin" name="hiddenopinionFranciscoEspin">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceGerardoSanchez">4.-	Gerardo Sánchez Mota</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceGerardoSanchez1" name="conoceGerardoSanchez" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceGerardoSanchez2" name="conoceGerardoSanchez" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceGerardoSanchez3" name="conoceGerardoSanchez" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceGerardoSanchez" name="hiddenconoceGerardoSanchez">
+													<label class="control-label" for="partidoGerardoSanchez">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoGerardoSanchez" id="partidoGerardoSanchez" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionGerardoSanchezMB">
+																<input type="radio" id="opinionGerardoSanchezMB" name="opinionGerardoSanchez" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionGerardoSanchezB">
+																<input type="radio" id="opinionGerardoSanchezB" name="opinionGerardoSanchez" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionGerardoSanchezR">
+																<input type="radio" id="opinionGerardoSanchezR" name="opinionGerardoSanchez" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionGerardoSanchezM">
+																<input type="radio" id="opinionGerardoSanchezM" name="opinionGerardoSanchez" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionGerardoSanchezMM">
+																<input type="radio" id="opinionGerardoSanchezMM" name="opinionGerardoSanchez" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionGerardoSanchezNC">
+																<input type="radio" id="opinionGerardoSanchezNC" name="opinionGerardoSanchez" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionGerardoSanchez" name="hiddenopinionGerardoSanchez">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceJuanAngel">5.- Juan Angel Flores</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceJuanAngel1" name="conoceJuanAngel" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceJuanAngel2" name="conoceJuanAngel" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceJuanAngel3" name="conoceJuanAngel" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceJuanAngel" name="hiddenconoceJuanAngel">
+													<label class="control-label" for="partidoJuanAngel">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoJuanAngel" id="partidoJuanAngel" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionJuanAngelMB">
+																<input type="radio" id="opinionJuanAngelMB" name="opinionJuanAngel" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionJuanAngelB">
+																<input type="radio" id="opinionJuanAngelB" name="opinionJuanAngel" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionJuanAngelR">
+																<input type="radio" id="opinionJuanAngelR" name="opinionJuanAngel" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionJuanAngelM">
+																<input type="radio" id="opinionJuanAngelM" name="opinionJuanAngel" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionJuanAngelMM">
+																<input type="radio" id="opinionJuanAngelMM" name="opinionJuanAngel" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionJuanAngelNC">
+																<input type="radio" id="opinionJuanAngelNC" name="opinionJuanAngel" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionJuanAngel" name="hiddenopinionJuanAngel">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceEzequielCastrejon">6.- Ezequiel Castrejón Rosas</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceEzequielCastrejon1" name="conoceEzequielCastrejon" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceEzequielCastrejon2" name="conoceEzequielCastrejon" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceEzequielCastrejon3" name="conoceEzequielCastrejon" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceEzequielCastrejon" name="hiddenconoceEzequielCastrejon">
+													<label class="control-label" for="partidoEzequielCastrejon">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoEzequielCastrejon" id="partidoEzequielCastrejon" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionEzequielCastrejonMB">
+																<input type="radio" id="opinionEzequielCastrejonMB" name="opinionEzequielCastrejon" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionEzequielCastrejonB">
+																<input type="radio" id="opinionEzequielCastrejonB" name="opinionEzequielCastrejon" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionEzequielCastrejonR">
+																<input type="radio" id="opinionEzequielCastrejonR" name="opinionEzequielCastrejon" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionEzequielCastrejonM">
+																<input type="radio" id="opinionEzequielCastrejonM" name="opinionEzequielCastrejon" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionEzequielCastrejonMM">
+																<input type="radio" id="opinionEzequielCastrejonMM" name="opinionEzequielCastrejon" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionEzequielCastrejonNC">
+																<input type="radio" id="opinionEzequielCastrejonNC" name="opinionEzequielCastrejon" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionEzequielCastrejon" name="hiddenopinionEzequielCastrejon">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceConcepcionAguilar">7.- Concepción Aguilar Sánchez</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceConcepcionAguilar1" name="conoceConcepcionAguilar" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceConcepcionAguilar2" name="conoceConcepcionAguilar" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceConcepcionAguilar3" name="conoceConcepcionAguilar" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceConcepcionAguilar" name="hiddenconoceConcepcionAguilar">
+													<label class="control-label" for="partidoConcepcionAguilar">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoConcepcionAguilar" id="partidoConcepcionAguilar" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionConcepcionAguilarMB">
+																<input type="radio" id="opinionConcepcionAguilarMB" name="opinionConcepcionAguilar" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionConcepcionAguilarB">
+																<input type="radio" id="opinionConcepcionAguilarB" name="opinionConcepcionAguilar" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionConcepcionAguilarR">
+																<input type="radio" id="opinionConcepcionAguilarR" name="opinionConcepcionAguilar" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionConcepcionAguilarM">
+																<input type="radio" id="opinionConcepcionAguilarM" name="opinionConcepcionAguilar" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionConcepcionAguilarMM">
+																<input type="radio" id="opinionConcepcionAguilarMM" name="opinionConcepcionAguilar" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionConcepcionAguilarNC">
+																<input type="radio" id="opinionConcepcionAguilarNC" name="opinionConcepcionAguilar" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionConcepcionAguilar" name="hiddenopinionConcepcionAguilar">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceCarlosNavarro">8.- Carlos Navarro Ocampo</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosNavarro1" name="conoceCarlosNavarro" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosNavarro2" name="conoceCarlosNavarro" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosNavarro3" name="conoceCarlosNavarro" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceCarlosNavarro" name="hiddenconoceCarlosNavarro">
+													<label class="control-label" for="partidoCarlosNavarro">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoCarlosNavarro" id="partidoCarlosNavarro" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionCarlosNavarroMB">
+																<input type="radio" id="opinionCarlosNavarroMB" name="opinionCarlosNavarro" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionCarlosNavarroB">
+																<input type="radio" id="opinionCarlosNavarroB" name="opinionCarlosNavarro" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionCarlosNavarroR">
+																<input type="radio" id="opinionCarlosNavarroR" name="opinionCarlosNavarro" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionCarlosNavarroM">
+																<input type="radio" id="opinionCarlosNavarroM" name="opinionCarlosNavarro" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionCarlosNavarroMM">
+																<input type="radio" id="opinionCarlosNavarroMM" name="opinionCarlosNavarro" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionCarlosNavarroNC">
+																<input type="radio" id="opinionCarlosNavarroNC" name="opinionCarlosNavarro" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionCarlosNavarro" name="hiddenopinionCarlosNavarro">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="conoceCarlosBrito">9.- Carlos Brito</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosBrito1" name="conoceCarlosBrito" value="Si">Espontaneo</label>
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosBrito2" name="conoceCarlosBrito" value="No">Ayudado</label>
+															<label class="btn btn-default"><input type="radio" id="conoceCarlosBrito3" name="conoceCarlosBrito" value="No lo conoce">No lo conoce</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenconoceCarlosBrito" name="hiddenconoceCarlosBrito">
+													<label class="control-label" for="partidoCarlosBrito">Partido:</label>
+													<div class="input-group">
+														<input class="form-control" autocomplete="off" type="text" name="partidoCarlosBrito" id="partidoCarlosBrito" value="" >
+													</div>
+													<label class="control-label" for="">Opinión:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-success btn-sm" for="opinionCarlosBritoMB">
+																<input type="radio" id="opinionCarlosBritoMB" name="opinionCarlosBrito" value="Muy Buena">Muy buena
+															</label> 
+															<label class="btn btn-success btn-sm" for="opinionCarlosBritoB">
+																<input type="radio" id="opinionCarlosBritoB" name="opinionCarlosBrito" value="Buena">Buena
+															</label> 
+															<label class="btn btn-warning btn-sm" for="opinionCarlosBritoR">
+																<input type="radio" id="opinionCarlosBritoR" name="opinionCarlosBrito" value="Regular">Regular
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionCarlosBritoM">
+																<input type="radio" id="opinionCarlosBritoM" name="opinionCarlosBrito" value="Mala">Mala
+															</label> 
+															<label class="btn btn-danger btn-sm" for="opinionCarlosBritoMM">
+																<input type="radio" id="opinionCarlosBritoMM" name="opinionCarlosBrito" value="Muy mala">Muy mala
+															</label> 
+															<label class="btn btn-default btn-sm" for="opinionCarlosBritoNC">
+																<input type="radio" id="opinionCarlosBritoNC" name="opinionCarlosBrito" value="No contestó">N.C.
+															</label> 
+														</div>
+														<input type="hidden" value="" id="hiddenopinionCarlosBrito" name="hiddenopinionCarlosBrito">
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="partidoalcalde">17. Si hoy fueran las elecciones, ¿por cuál de los siguientes partidos políticos votaría para la Presidencia de Jojutla?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePRI" name="partidoalcalde" value="PRI" ><img src="img/candidatos/pri.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePES" name="partidoalcalde" value="PES" ><img src="img/candidatos/pes.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default" style="color: #a94442; font-weight: bold;">
+																<input type="radio" id="partidoalcaldePT" name="partidoalcalde" value="PT" ><img src="img/candidatos/pt.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePH" name="partidoalcalde" value="PH" ><img src="img/candidatos/ph.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePAN" name="partidoalcalde" value="PAN" ><img src="img/candidatos/pan.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldeMC" name="partidoalcalde" value="MC" ><img src="img/candidatos/mc.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePRD" name="partidoalcalde" value="PRD" ><img src="img/candidatos/prd.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePNA" name="partidoalcalde" value="PNA" ><img src="img/candidatos/pna.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldeMORENA" name="partidoalcalde" value="MORENA" ><img src="img/candidatos/morena.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldePVEM" name="partidoalcalde" value="PVEM" ><img src="img/candidatos/pvem.jpg" class="img-responsive">
+															</label>
+															<!--  Cambiar imagen independiente-->
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldeIndependiente" name="partidoalcalde" value="Independiente" ><img src="img/candidatos/independiente.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldeNinguno" name="partidoalcalde" value="Ninguno" ><img src="img/candidatos/Ninguno.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidoalcaldeNSNC" name="partidoalcalde" value="N.S. - N.C." ><img src="img/candidatos/nsnc.jpg" class="img-responsive">
+															</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpartidoalcalde" name="hiddenpartidoalcalde">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votoalcalde">18.-	Si hoy fueran las elecciones, ¿por cuál de los siguientes candidatos votaría para la Presidencia de Jojutla?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde1" name="votoalcalde" value="Carlos Brito">Carlos Brito</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde2" name="votoalcalde" value="Roberto Córdova">Roberto Córdova</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde3" name="votoalcalde" value="Francisco Espín Vargas">Francisco Espín Vargas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde4" name="votoalcalde" value="Gerardo Sánchez Mota">Gerardo Sánchez Mota</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde5" name="votoalcalde" value="Juan Ángel Flores">Juan Ángel Flores</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde6" name="votoalcalde" value="Ezequiel Castrejón Rosas">Ezequiel Castrejón Rosas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde7" name="votoalcalde" value="Concepción Aguilar Sánchez">Concepción Aguilar Sánchez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde8" name="votoalcalde" value="Carlos Navarro Uribe">Carlos Navarro Uribe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde9" name="votoalcalde" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde10" name="votoalcalde" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votoalcalde11" name="votoalcalde" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotoalcalde" name="hiddenvotoalcalde">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="votootroalcalde">19.- Si el candidato que acaba de mencionar, no participaría en las elecciones, ¿por cual de los siguientes candidatos votaría para presidente de Jojutla?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde1" name="votootroalcalde" value="Carlos Brito">Carlos Brito</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde2" name="votootroalcalde" value="Roberto Córdova">Roberto Córdova</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde3" name="votootroalcalde" value="Francisco Espín Vargas">Francisco Espín Vargas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde4" name="votootroalcalde" value="Gerardo Sánchez Mota">Gerardo Sánchez Mota</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde5" name="votootroalcalde" value="Juan Ángel Flores">Juan Ángel Flores</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde6" name="votootroalcalde" value="Ezequiel Castrejón Rosas">Ezequiel Castrejón Rosas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde7" name="votootroalcalde" value="Concepción Aguilar Sánchez">Concepción Aguilar Sánchez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde8" name="votootroalcalde" value="Carlos Navarro Uribe">Carlos Navarro Uribe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde9" name="votootroalcalde" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde10" name="votootroalcalde" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="votootroalcalde11" name="votootroalcalde" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenvotootroalcalde" name="hiddenvotootroalcalde">
+												</div>
+												
+												
+												<label class="" for="">20.- Si usted en lugar de tener un solo voto tuviera diez, ¿entre los siguientes candidatos cómo los repartiría?</label>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoJuanAngel">Juan Ángel Flores</label>
+													<div>
+														<select name="repartirvotoJuanAngel" id="repartirvotoJuanAngel" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoEzequielCastrejon">Ezequiel Castrejón Rosas </label>
+													<div>
+														<select name="repartirvotoEzequielCastrejon" id="repartirvotoEzequielCastrejon" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoCarlosBrito">Carlos Brito</label>
+													<div>
+														<select name="repartirvotoCarlosBrito" id="repartirvotoCarlosBrito" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoGerardoSanchez">Gerardo Sánchez Mota</label>
+													<div>
+														<select name="repartirvotoGerardoSanchez" id="repartirvotoGerardoSanchez" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoRobertoCordova">Roberto Córdova</label>
+													<div>
+														<select name="repartirvotoRobertoCordova" id="repartirvotoRobertoCordova" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoFranciscoEspin">Francisco Espín Vargas</label>
+													<div>
+														<select name="repartirvotoFranciscoEspin" id="repartirvotoFranciscoEspin" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoConcepcionAguilar">Concepción Aguilar Sánchez</label>
+													<div>
+														<select name="repartirvotoConcepcionAguilar" id="repartirvotoConcepcionAguilar" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoCarlosNavarro">Carlos Navarro Uribe</label>
+													<div>
+														<select name="repartirvotoCarlosNavarro" id="repartirvotoCarlosNavarro" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoNulo">Nulo</label>
+													<div>
+														<select name="repartirvotoNulo" id="repartirvotoNulo" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="repartirvotoBlanco">Blanco</label>
+													<div>
+														<select name="repartirvotoBlanco" id="repartirvotoBlanco" class="form-control">
+															<option data-placeholder="true" value="0">Seleccione</option>
+                                                            <option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+                                                        </select>                         
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="ganaralcalde">21.- De los siguientes candidatos, ¿quién cree que va ganar la elección a la Presidencia de Jojutla?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde1" name="ganaralcalde" value="Carlos Brito">Carlos Brito</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde2" name="ganaralcalde" value="Roberto Córdova">Roberto Córdova</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde3" name="ganaralcalde" value="Francisco Espín Vargas">Francisco Espín Vargas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde4" name="ganaralcalde" value="Gerardo Sánchez Mota">Gerardo Sánchez Mota</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde5" name="ganaralcalde" value="Juan Ángel Flores">Juan Ángel Flores</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde6" name="ganaralcalde" value="Ezequiel Castrejón Rosas">Ezequiel Castrejón Rosas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde7" name="ganaralcalde" value="Concepción Aguilar Sánchez">Concepción Aguilar Sánchez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde8" name="ganaralcalde" value="Carlos Navarro Uribe">Carlos Navarro Uribe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde9" name="ganaralcalde" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde10" name="ganaralcalde" value="Nulo">Nulo</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ganaralcalde11" name="ganaralcalde" value="Blanco">Blanco</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenganaralcalde" name="hiddenganaralcalde">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="mejorciudad">22.- Pensando en las próximas elecciones y en el bienestar de los habitantes de Jojutla, ¿qué es lo mejor para nuestra Ciudad?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="mejorciudad1" name="mejorciudad" value="Que Jojutla tenga un presidente que mantenga la misma línea y forma de trabajo del alcalde actual">Que Jojutla tenga un presidente que mantenga la misma línea y forma de trabajo del alcalde actual</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="mejorciudad2" name="mejorciudad" value="Que Jojutla tenga un presidente que mantenga la misma línea partidaria que el alcalde actual pero que trabaje distinto">Que Jojutla tenga un presidente que mantenga la misma línea partidaria que el alcalde actual pero que trabaje distinto</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="mejorciudad3" name="mejorciudad" value="Que llegue a la presidencia de Jojutla alguien completamente distinto pero que trabaje de la misma forma como el presidente actual">Que llegue a la presidencia de Jojutla alguien completamente distinto pero que trabaje de la misma forma como el presidente actual</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="mejorciudad4" name="mejorciudad" value="Que llegue a la presidencia de Jojutla otra persona, que trabaje de una manera completamente diferente del actual presidente">Que llegue a la presidencia de Jojutla otra persona, que trabaje de una manera completamente diferente del actual presidente</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="mejorciudad5" name="mejorciudad" value="No sé">No sé</label>
+														</div>
+														
+													</div>
+													<input type="hidden" value="" id="hiddenmejorciudad" name="hiddenmejorciudad">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="partidocapaz">23.- De los partidos políticos que usted conoce, ¿cuál es capaz de lograr mayores beneficios para Jojutla y sus habitantes?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPRD" name="partidocapaz" value="PRD" ><img src="img/candidatos/prd.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPRI" name="partidocapaz" value="PRI" ><img src="img/candidatos/pri.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPES" name="partidocapaz" value="PES" ><img src="img/candidatos/pes.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPNA" name="partidocapaz" value="PNA" ><img src="img/candidatos/pna.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPH" name="partidocapaz" value="PH" ><img src="img/candidatos/ph.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazPAN" name="partidocapaz" value="PAN" ><img src="img/candidatos/pan.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazMORENA" name="partidocapaz" value="MORENA" ><img src="img/candidatos/morena.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazMC" name="partidocapaz" value="MC" ><img src="img/candidatos/mc.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default" style="color: #a94442; font-weight: bold;">
+																<input type="radio" id="partidocapazPT" name="partidocapaz" value="PT" ><img src="img/candidatos/pt.jpg" class="img-responsive">
+															</label>
+															<!--  Cambiar imagen independiente-->
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazIndependiente" name="partidocapaz" value="Independiente" ><img src="img/candidatos/independiente.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazNinguno" name="partidocapaz" value="Ninguno" ><img src="img/candidatos/Ninguno.jpg" class="img-responsive">
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="partidocapazNSNC" name="partidocapaz" value="N.S. - N.C." ><img src="img/candidatos/nsnc.jpg" class="img-responsive">
+															</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpartidocapaz" name="hiddenpartidocapaz">
+												</div>
+											</section>
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Percepciones varias">
+												<label class="control-label" for="">24.- Uno de los candidatos a la Presidencia de Jojutla tiene algunas propuestas que le voy a mencionar y para cada una de ellas quiero que me diga primero si está de acuerdo o en desacuerdo y ¿qué tan importante es para una persona como usted que esto pase?</label>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Proyecto de reconstrucción del centro de Jojutla</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta11" name="propuesta1" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta12" name="propuesta1" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta1NC" name="propuesta1" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta1" name="hiddenpropuesta1">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante11" name="propuestaImportante1" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante12" name="propuestaImportante1" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante13" name="propuestaImportante1" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante14" name="propuestaImportante1" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante1NC" name="propuestaImportante1" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante1" name="hiddenpropuestaImportante1">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Reconstrucción y gestión de ayuda para los damnificados</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta21" name="propuesta2" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta22" name="propuesta2" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta2NC" name="propuesta2" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta2" name="hiddenpropuesta2">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante21" name="propuestaImportante2" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante22" name="propuestaImportante2" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante23" name="propuestaImportante2" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante24" name="propuestaImportante2" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante2NC" name="propuestaImportante2" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante2" name="hiddenpropuestaImportante2">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Asfaltado y bacheo de las principales calles de los barrios de la ciudad</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta31" name="propuesta3" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta32" name="propuesta3" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta3NC" name="propuesta3" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta3" name="hiddenpropuesta3">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante31" name="propuestaImportante3" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante32" name="propuestaImportante3" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante33" name="propuestaImportante3" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante34" name="propuestaImportante3" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante3NC" name="propuestaImportante3" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante3" name="hiddenpropuestaImportante3">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Construcción de un parque industrial para generar empleo</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta41" name="propuesta4" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta42" name="propuesta4" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta4NC" name="propuesta4" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta4" name="hiddenpropuesta4">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante41" name="propuestaImportante4" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante42" name="propuestaImportante4" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante43" name="propuestaImportante4" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante44" name="propuestaImportante4" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante4NC" name="propuestaImportante4" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante4" name="hiddenpropuestaImportante4">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Proyecto de apoyo agrícola para incrementar la producción y nuevos cultivos</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta51" name="propuesta5" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta52" name="propuesta5" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta5NC" name="propuesta5" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta5" name="hiddenpropuesta5">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante51" name="propuestaImportante5" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante52" name="propuestaImportante5" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante53" name="propuestaImportante5" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante54" name="propuestaImportante5" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante5NC" name="propuestaImportante5" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante5" name="hiddenpropuestaImportante5">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Carretera que una a las comunidades Tlatenchi - Higueron</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta61" name="propuesta6" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta62" name="propuesta6" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta6NC" name="propuesta6" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta6" name="hiddenpropuesta6">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante61" name="propuestaImportante6" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante62" name="propuestaImportante6" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante63" name="propuestaImportante6" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante64" name="propuestaImportante6" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante6NC" name="propuestaImportante6" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante6" name="hiddenpropuestaImportante6">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Unidad deportiva "Polideportivo"</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta71" name="propuesta7" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta72" name="propuesta7" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta7NC" name="propuesta7" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta7" name="hiddenpropuesta7">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante71" name="propuestaImportante7" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante72" name="propuestaImportante7" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante73" name="propuestaImportante7" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante74" name="propuestaImportante7" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante7NC" name="propuestaImportante7" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante7" name="hiddenpropuestaImportante7">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Museo de la ciudad</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta81" name="propuesta8" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta82" name="propuesta8" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta8NC" name="propuesta8" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta8" name="hiddenpropuesta8">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante81" name="propuestaImportante8" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante82" name="propuestaImportante8" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante83" name="propuestaImportante8" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante84" name="propuestaImportante8" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante8NC" name="propuestaImportante8" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante8" name="hiddenpropuestaImportante8">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Fortalecimiento de servicio de emergencia</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta91" name="propuesta9" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta92" name="propuesta9" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta9NC" name="propuesta9" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta9" name="hiddenpropuesta9">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante91" name="propuestaImportante9" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante92" name="propuestaImportante9" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante93" name="propuestaImportante9" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante94" name="propuestaImportante9" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante9NC" name="propuestaImportante9" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante9" name="hiddenpropuestaImportante9">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Facilidades de inversión para los comerciantes</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta101" name="propuesta10" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta102" name="propuesta10" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta10NC" name="propuesta10" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta10" name="hiddenpropuesta10">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante101" name="propuestaImportante10" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante102" name="propuestaImportante10" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante103" name="propuestaImportante10" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante104" name="propuestaImportante10" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante10NC" name="propuestaImportante10" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante10" name="hiddenpropuestaImportante10">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Implementación de alarmas sísmicas</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta111" name="propuesta11" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta112" name="propuesta11" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta11NC" name="propuesta11" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta11" name="hiddenpropuesta11">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante111" name="propuestaImportante11" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante112" name="propuestaImportante11" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante113" name="propuestaImportante11" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante114" name="propuestaImportante11" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante11NC" name="propuestaImportante11" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante11" name="hiddenpropuestaImportante11">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="">Escuelas de capacitación técnica</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio"  id="propuesta121" name="propuesta12" value="De acuerdo">De acuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta122" name="propuesta12" value="Desacuerdo">Desacuerdo</label>
+															<label class="btn btn-default"><input type="radio" id="propuesta12NC" name="propuesta12" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuesta12" name="hiddenpropuesta12">
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante121" name="propuestaImportante12" value="Muchísimo">Muchísimo</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante122" name="propuestaImportante12" value="Mucho">Mucho</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante123" name="propuestaImportante12" value="Poco">Poco</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante124" name="propuestaImportante12" value="Nada">Nada</label>
+															<label class="btn btn-default"><input type="radio" id="propuestaImportante12NC" name="propuestaImportante12" value="N.C.">N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenpropuestaImportante12" name="hiddenpropuestaImportante12">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="cumpliralcalde">25.- De los candidatos que le mencioné, ¿quién cree usted que sea el que pueda cumplir con estas propuestas?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde1" name="cumpliralcalde" value="Carlos Brito">Carlos Brito</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde2" name="cumpliralcalde" value="Roberto Córdova">Roberto Córdova</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde3" name="cumpliralcalde" value="Francisco Espín Vargas">Francisco Espín Vargas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde4" name="cumpliralcalde" value="Gerardo Sánchez Mota">Gerardo Sánchez Mota</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde5" name="cumpliralcalde" value="Juan Ángel Flores">Juan Ángel Flores</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde6" name="cumpliralcalde" value="Ezequiel Castrejón Rosas">Ezequiel Castrejón Rosas</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde7" name="cumpliralcalde" value="Concepción Aguilar Sánchez">Concepción Aguilar Sánchez</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde8" name="cumpliralcalde" value="Carlos Navarro Uribe">Carlos Navarro Uribe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde9" name="cumpliralcalde" value="No sabe">No sabe</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="cumpliralcalde10" name="cumpliralcalde" value="Ninguno">Ninguno</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddencumpliralcalde" name="hiddencumpliralcalde">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="impresionroberto">26.- ¿Qué impresión tiene usted cuando le digo que el candidato del PRI, Roberto Córdova de ser Presidente Municipal de Jojutla, gobernaría  de la misma manera como Enrique Peña Nieto gobierna a México?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto1" name="impresionroberto" value="Le es indiferente">Le es indiferente</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto2" name="impresionroberto" value="No cree que esto sea cierto">No cree que esto sea cierto</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto3" name="impresionroberto" value="Le motiva a votar por Roberto Córdova">Le motiva a votar por Roberto Córdova</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto4" name="impresionroberto" value="Sería negativo para Jojutla">Sería negativo para Jojutla</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto5" name="impresionroberto" value="Le da ganas de votar por otros candidatos">Le da ganas de votar por otros candidatos</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionroberto6" name="impresionroberto" value="No sabe">No sabe</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenimpresionroberto" name="hiddenimpresionroberto">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="impresionalfonso">27.- ¿Qué impresión le da cuando le digo que Alfonso de Jesús Sotelo (Ponchito) está haciendo campaña en conjunto con Juan Angel Flores?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso1" name="impresionalfonso" value="Le es indiferente">Le es indiferente</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso2" name="impresionalfonso" value="Considera que los hace más fuertes">Considera que los hace más fuertes</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso3" name="impresionalfonso" value="Es positivo para Jojutla que trabajen juntos">Es positivo para Jojutla que trabajen juntos</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso4" name="impresionalfonso" value="Es negativo para la campaña de Juan Angel Flores">Es negativo para la campaña de Juan Angel Flores</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso5" name="impresionalfonso" value="Le da ganas de votar por otros candidatos">Le da ganas de votar por otros candidatos</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="impresionalfonso6" name="impresionalfonso" value="No sabe">No sabe</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenimpresionalfonso" name="hiddenimpresionalfonso">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="terremoto">28.- En Jojutla el terremoto afectó mucho a la ciudad, ¿Ud. considera que la situación en la ciudad va mejorar o empeorar?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="terremoto1" name="terremoto" value="Mejor">Mejor</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="terremoto2" name="terremoto" value="Empeorar">Empeorar</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="terremoto3" name="terremoto" value="Igual">Igual</label>
+														</div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="terremoto4" name="terremoto" value="No sabe">No sabe</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenterremoto" name="hiddenterremoto">
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="mismopartido">29.- En una escala del 1 al 10 donde 1 significa no estoy nada beneficioso y 10 totalmente beneficioso, ¿Qué tan beneficioso es para Jojutla que el futuro presidente de Jojutla sea del partido que el próximo gobernador de Morelos y el próximo Presidente de México?</label>
+													<div>
+														<input id="mismopartido" type="text" data-slider-ticks="[1,2,3,4,5,6,7,8,9,10]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["1","2", "3", "4", "5", "6", "7", "8", "9", "10"]'/>
+														</div>
+													<input type="hidden" value="" id="hiddenmismopartido" name="hiddenmismopartido">
+												</div>
+												
+											</section>
+											<section style="padding-left: 15px;padding-right: 15px;" class="step" data-step-title="Ubicación">
+												<div class="form-group no-gutter">
+													<label class="control-label" for="seccionEncuestado">Sección</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="seccionEncuestado" id="seccionEncuestado" value="" >
+														<button type="button" class="btn btn-default" id="seccionNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="ciudadencuestado">Ciudad</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="ciudadencuestado" id="ciudadencuestado" value="" >
+														<button type="button" class="btn btn-default" id="ciudadencuestadoNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="municipioencuestado">Municipio</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="municipioencuestado" id="municipioencuestado" value="" >
+														<button type="button" class="btn btn-default" id="municipioencuestadoNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="nombreencuestado">Nombre</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="nombreencuestado" id="nombreencuestado" value="" >
+														<button type="button" class="btn btn-default" id="nombreencuestadoNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="barrioencuestado">Barrio</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="barrioencuestado" id="barrioencuestado" value="" >
+														<button type="button" class="btn btn-default" id="barrioencuestadoNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="telencuestado">Teléfono</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="telencuestado" id="telencuestado" value="" >
+														<button type="button" class="btn btn-default" id="telencuestadoNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="usr">Usuario</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="usr" id="usr" value="" >
+														
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="pwd">Contraseña</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="pwd" id="pwd" value="" >
+													</div>
+												</div>
+											</section>
+											
+											
+											<div id="spinner" class="col-md-3 hidden">
+							<div class="three-quarters-loader text-center" >
+							  Guardando
+							</div>
+						</div>
+										</form>
+									
+							</div>
+						</div>
+						<!-- Row end -->
+
+					
+					</div>
+					<!-- Spacer ends -->
+
+				</div>
+				<!-- Container fluid ends -->
+
+			</div>
+			<!-- Main Container Start -->
+
+			<!-- Footer Start -->
+			<footer>
+				Copyright Estrategia, Tecnología y Procesos S.C.<span> 2018 </span>. All Rights Reserved.
+			</footer>
+			<!-- Footer end -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+		<!-- Animated Right Sidebar -->
+		<script src="js/slidebars.js"></script>
+
+		<!-- Date Range -->
+		<script src="js/daterange/moment.js"></script>
+		<script src="js/daterange/daterangepicker.js"></script>
+
+		<!-- Custom Js -->
+		<script src="js/wizard/bwizard.js"></script>
+		
+		<!-- Easy Wizard -->
+		<script src="js/easy-wizard/jquery.snippet.min.js"></script>
+		<script src="js/easy-wizard/jquery.easyWizard.js"></script>
+		<script src="js/easy-wizard/scripts.js"></script>
+<!-- Slider by Eyecon-->
+		<script src="js/bootstrap-slider.min.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+		<script src="js/myjs.js"></script>
+		<script type="text/javascript">
+		function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			//alert(navigator.notification);
+		}
+}
+
+// device APIs are available
+//
+
+/*
+$("#vaciar").on("click", function(evt){
+evt.preventDefault();
+	var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+	SQLite.deleteDatabase('tendenciasmorelosbd2', function(err) {
+	  if (err) throw err;
+	  navigator.notification.alert('La base de datos se ha borrado', "", 'Validación', 'OK');
+					
+	});
+});
+	*/	
+		
+		//Wizard
+		$("#wizard").bwizard();
+
+$("#calificacionalcalde").slider({
+    ticks: [0,1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["0","1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+$("#calificaciongobernador").slider({
+    ticks: [0,1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["0","1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+$("#calificacionpresidente").slider({
+    ticks: [0,1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["0","1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+$("#segurovoto").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+$("#mismopartido").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+		
+
+		
+                                            $("#myWizard").on("click", "#Problema1NC", function(event) {
+                                                $("#Problema1Cual").val('No contestó');
+                                            });
+											$("#myWizard").on("click", "#Problema2NC", function(event) {
+                                                $("#Problema2Cual").val('No contestó');
+                                            });
+											$("#myWizard").on("click", "#Problema3NC", function(event) {
+                                                $("#Problema3Cual").val('No contestó');
+                                            });
+
+											
+                                            $("#myWizard").on("click", "#seccionNC", function(event) {
+                                                $("#seccionEncuestado").val('Sin especificar');
+                                            });
+
+                                            $("#myWizard").on("click", "#municipioencuestadoNC", function(event) {
+                                                $("#municipioencuestado").val('Sin especificar');
+                                            });
+											 $("#myWizard").on("click", "#ciudadencuestadoNC", function(event) {
+                                                $("#ciudadencuestado").val('Sin especificar');
+                                            });
+											$("#myWizard").on("click", "#nombreencuestadoNC", function(event) {
+                                                $("#nombreencuestado").val('Sin especificar');
+                                            });
+											$("#myWizard").on("click", "#barrioencuestadoNC", function(event) {
+                                                $("#barrioencuestado").val('Sin especificar');
+                                            });
+											$("#myWizard").on("click", "#telencuestadoNC", function(event) {
+                                                $("#telencuestado").val('Sin especificar');
+                                            });
+											
+											
+		$("#myWizard").on("submit", function(event) {
+											
+            event.preventDefault();
+			
+			
+			$('#Problema1Cual').val($.trim($('#Problema1Cual').val()));
+			$('#Problema2Cual').val($.trim($('#Problema2Cual').val()));
+			$('#Problema3Cual').val($.trim($('#Problema3Cual').val()));
+			$('#seccionEncuestado').val($.trim($('#seccionEncuestado').val()));
+			$('#municipioencuestado').val($.trim($('#municipioencuestado').val()));
+			$('#ciudadencuestado').val($.trim($('#ciudadencuestado').val()));
+			$('#nombreencuestado').val($.trim($('#nombreencuestado').val()));
+			$('#barrioencuestado').val($.trim($('#barrioencuestado').val()));
+			$('#telencuestado').val($.trim($('#telencuestado').val()));
+			$('#edadEncuestado').val($.trim($('#edadEncuestado').val()));
+			$('#partidoRobertoCordova').val($.trim($('#partidoRobertoCordova').val()));
+			$('#partidoAraceliGarduno').val($.trim($('#partidoAraceliGarduno').val()));
+			$('#partidoFranciscoEspin').val($.trim($('#partidoFranciscoEspin').val()));
+			$('#partidoGerardoSanchez').val($.trim($('#partidoGerardoSanchez').val()));
+			$('#partidoJuanAngel').val($.trim($('#partidoJuanAngel').val()));
+			$('#partidoEzequielCastrejon').val($.trim($('#partidoEzequielCastrejon').val()));
+			$('#partidoConcepcionAguilar').val($.trim($('#partidoConcepcionAguilar').val()));
+			$('#partidoCarlosNavarro').val($.trim($('#partidoCarlosNavarro').val()));
+			$('#partidoCarlosBrito').val($.trim($('#partidoCarlosBrito').val()));
+			
+			
+			
+
+			
+			if ($('#seccionEncuestado').val() == "0") {
+                    navigator.notification.alert('Debe ingresar una sección', "", 'Validación', 'OK');
+					$('#seccionEncuestado').focus();
+             
+					
+                } else if ($('#ciudadencuestado').val() == "0") {
+                    navigator.notification.alert('Debe elegir una ciudad', "", 'Validación', 'OK');
+					$('#ciudadencuestado').focus();
+             
+					
+                } else if ($('#municipioencuestado').val() == "0") {
+                    navigator.notification.alert('Debe elegir un municipio', "", 'Validación', 'OK');
+					$('#municipioencuestado').focus();
+             
+					
+                } else if ($('#nombreencuestado').val() == "0") {
+                    navigator.notification.alert('Debe ingresar un nombre', "", 'Validación', 'OK');
+					$('#nombreencuestado').focus();
+             
+					
+                } else if ($('#barrioencuestado').val() == "0") {
+                    navigator.notification.alert('Debe elegir un barrio', "", 'Validación', 'OK');
+					$('#barrioencuestado').focus();
+             
+					
+                } else if ($('#telencuestado').val() == "0") {
+                    navigator.notification.alert('Debe ingrsar un teléfono', "", 'Validación', 'OK');
+					$('#telencuestado').focus();
+             
+					
+                } else if ($('#usr').val().length < 3) {
+                    navigator.notification.alert('Debe indicar su usuario', "", 'Validación', 'OK');
+					$(usr).focus();
+                } else if ($('#pwd').val().length < 3) {
+                    navigator.notification.alert('Debe indicar su contraseña', "", 'Validación', 'OK');
+					$('#pwd').focus();
+                                    
+			} else {
+			
+			var generoEncuestado=$("input[name='generoEncuestado']:checked").val();
+			var edadEncuestado=$("#edadEncuestado").val();
+			var estudiosencuestado=$("input[name='estudiosencuestado']:checked").val();
+			var origenencuestado=$("input[name='origenencuestado']:checked").val();
+			var hijosEncuestado=$("input[name='hijosEncuestado']:checked").val();
+			var estadocivilEncuestado=$("input[name='estadocivilEncuestado']:checked").val();
+			
+			var calificacionalcalde=$("#calificacionalcalde").val();
+			var calificaciongobernador=$("#calificaciongobernador").val();
+			var calificacionpresidente=$("#calificacionpresidente").val();
+		
+			var opinionalcalde=$("input[name='opinionalcalde']:checked").val();
+			var problemas1=$("#problemas1").val();
+			var problemas2=$("#problemas2").val();
+			var problemas3=$("#problemas3").val();
+			var problema1Cual=$("#problema1Cual").val();
+			var problema2Cual=$("#problema2Cual").val();
+			var problema3Cual=$("#problema3Cual").val();
+	
+			var segurovoto=$("#segurovoto").val();
+			var votopresidente=$("input[name='votopresidente']:checked").val();
+			var votogobernador=$("input[name='votogobernador']:checked").val();
+			var votosenadores=$("input[name='votosenadores']:checked").val();
+			var votosenado=$("input[name='votosenado']:checked").val();
+			var votodiputadofederal=$("input[name='votodiputadofederal']:checked").val();
+			var votodiputadolocal=$("input[name='votodiputadolocal']:checked").val();
+			var conoceRobertoCordova=$("input[name='conoceRobertoCordova']:checked").val();
+			var partidoRobertoCordova=$("#partidoRobertoCordova").val();
+			var opinionRobertoCordova=$("input[name='opinionRobertoCordova']:checked").val();
+			var conoceAraceliGarduno=$("input[name='conoceAraceliGarduno']:checked").val();
+			var partidoAraceliGarduno=$("#partidoAraceliGarduno").val();
+			var opinionAraceliGarduno=$("input[name='opinionAraceliGarduno']:checked").val();
+			var conoceFranciscoEspin=$("input[name='conoceFranciscoEspin']:checked").val();
+			var partidoFranciscoEspin=$("#partidoFranciscoEspin").val();
+			var opinionFranciscoEspin=$("input[name='opinionFranciscoEspin']:checked").val();
+			var conoceGerardoSanchez=$("input[name='conoceGerardoSanchez']:checked").val();
+			var partidoGerardoSanchez=$("#partidoGerardoSanchez").val();
+			var opinionGerardoSanchez=$("input[name='opinionGerardoSanchez']:checked").val();
+			var conoceJuanAngel=$("input[name='conoceJuanAngel']:checked").val();
+			var partidoJuanAngel=$("#partidoJuanAngel").val();
+			var opinionJuanAngel=$("input[name='opinionJuanAngel']:checked").val();
+			var conoceEzequielCastrejon=$("input[name='conoceEzequielCastrejon']:checked").val();
+			var partidoEzequielCastrejon=$("#partidoEzequielCastrejon").val();
+			var opinionEzequielCastrejon=$("input[name='opinionEzequielCastrejon']:checked").val();
+			var conoceConcepcionAguilar=$("input[name='conoceConcepcionAguilar']:checked").val();
+			var partidoConcepcionAguilar=$("#partidoConcepcionAguilar").val();
+			var opinionConcepcionAguilar=$("input[name='opinionConcepcionAguilar']:checked").val();
+			var conoceCarlosNavarro=$("input[name='conoceCarlosNavarro']:checked").val();
+			var partidoCarlosNavarro=$("#partidoCarlosNavarro").val();
+			var opinionCarlosNavarro=$("input[name='opinionCarlosNavarro']:checked").val();
+			var conoceCarlosBrito=$("input[name='conoceCarlosBrito']:checked").val();
+			var partidoCarlosBrito=$("#partidoCarlosBrito").val();
+			var opinionCarlosBrito=$("input[name='opinionCarlosBrito']:checked").val();
+			var partidoalcalde=$("input[name='partidoalcalde']:checked").val();
+			var votoalcalde=$("input[name='votoalcalde']:checked").val();
+			var votootroalcalde=$("input[name='votootroalcalde']:checked").val();
+			var repartirvotoJuanAngel=$("#repartirvotoJuanAngel").val();
+			var repartirvotoEzequielCastrejon=$("#repartirvotoEzequielCastrejon").val();
+			var repartirvotoCarlosBrito=$("#repartirvotoCarlosBrito").val();
+			var repartirvotoGerardoSanchez=$("#repartirvotoGerardoSanchez").val();
+			var repartirvotoRobertoCordova=$("#repartirvotoRobertoCordova").val();
+			var repartirvotoFranciscoEspin=$("#repartirvotoFranciscoEspin").val();
+			var repartirvotoConcepcionAguilar=$("#repartirvotoConcepcionAguilar").val();
+			var repartirvotoCarlosNavarro=$("#repartirvotoCarlosNavarro").val();
+			var repartirvotoNulo=$("#repartirvotoNulo").val();
+			var repartirvotoBlanco=$("#repartirvotoBlanco").val();
+			var ganaralcalde=$("input[name='ganaralcalde']:checked").val();
+			var mejorciudad=$("input[name='mejorciudad']:checked").val();
+			var partidocapaz=$("input[name='partidocapaz']:checked").val();
+			var propuesta1=$("input[name='propuesta1']:checked").val();
+			var propuestaImportante1=$("input[name='propuestaImportante1']:checked").val();
+			var propuesta2=$("input[name='propuesta2']:checked").val();
+			var propuestaImportante2=$("input[name='propuestaImportante2']:checked").val();
+			var propuesta3=$("input[name='propuesta3']:checked").val();
+			var propuestaImportante3=$("input[name='propuestaImportante3']:checked").val();
+			var propuesta4=$("input[name='propuesta4']:checked").val();
+			var propuestaImportante4=$("input[name='propuestaImportante4']:checked").val();
+			var propuesta5=$("input[name='propuesta5']:checked").val();
+			var propuestaImportante5=$("input[name='propuestaImportante5']:checked").val();
+			var propuesta6=$("input[name='propuesta6']:checked").val();
+			var propuestaImportante6=$("input[name='propuestaImportante6']:checked").val();
+			var propuesta7=$("input[name='propuesta7']:checked").val();
+			var propuestaImportante7=$("input[name='propuestaImportante7']:checked").val();
+			var propuesta8=$("input[name='propuesta8']:checked").val();
+			var propuestaImportante8=$("input[name='propuestaImportante8']:checked").val();
+			var propuesta9=$("input[name='propuesta9']:checked").val();
+			var propuestaImportante9=$("input[name='propuestaImportante9']:checked").val();
+			var propuesta10=$("input[name='propuesta10']:checked").val();
+			var propuestaImportante10=$("input[name='propuestaImportante10']:checked").val();
+			var propuesta11=$("input[name='propuesta11']:checked").val();
+			var propuestaImportante11=$("input[name='']:checked").val();
+			var propuesta12=$("input[name='propuesta12']:checked").val();
+			var propuestaImportante12=$("input[name='propuestaImportante12']:checked").val();
+			var cumpliralcalde=$("input[name='cumpliralcalde']:checked").val();
+			var impresionroberto=$("input[name='impresionroberto']:checked").val();
+			var impresionalfonso=$("input[name='impresionalfonso']:checked").val();
+			var terremoto=$("input[name='terremoto']:checked").val();
+			var mismopartido=$("#mismopartido").val();
+			var seccionEncuestado=$("#seccionEncuestado").val();
+			var ciudadencuestado=$("#ciudadencuestado").val();
+			var municipioencuestado=$("#municipioencuestado").val();
+			var nombreencuestado=$("#nombreencuestado").val();
+			var barrioencuestado=$("#barrioencuestado").val();
+			var telencuestado=$("#telencuestado").val();
+		//	generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado
+			101
+			
+			
+			
+			
+			$("#spinner").removeClass("hidden");
+				//
+				 var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+				  var sqlite = new SQLite('tendenciasjiutepec');
+				  sqlite.open(function(err) {
+					//alert('Connection opened');
+					if (err) throw err;
+					sqlite.query('CREATE TABLE IF NOT EXISTS EstudiosJojutla (idsqlite, idbd, geo, estatus, generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado)', function(err, res) {
+					  if (err) throw err;
+					//  alert(JSON.stringify(res));
+					});
+					sqlite.query('Select count(idbd) as conteo from EstudiosJojutla', [], function(err, res) {
+					  if (err) throw err;
+						var respuesta=res;
+						var total=res.rows[0].conteo;
+						total=total+1;
+						//alert(total);
+						
+						if(navigator.geolocation) {
+							navigator.geolocation.getCurrentPosition(function(position) {
+								
+								var pos=position.coords.latitude+","+position.coords.longitude;
+								sqlite.query('INSERT INTO EstudiosJojutla VALUES (?,?,?,??,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[total, 0, pos, 'registered', generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado], function(err, res) {
+								if (err) throw err;
+									navigator.notification.alert('Datos almacenados correctamente en el equipo.', "", 'Información', 'OK');
+									sqlite.query('Select * from EstudiosJojutla where estatus=?', ["registered"], function(err, result) {
+									
+									
+									
+										$.ajax({
+											cache: false,
+											type: 'GET',
+											dataType: 'jsonp',
+											url: 'http://etpsoluciones.com/sistemas/morelos2017/controlSurvey.php',
+											//contentType: 'multipart/form-data',
+											//processData: false,
+											data: {
+												accion: "saveMunguia",
+												user: $("#usr").val(),
+												pass: $("#pwd").val(),
+												valores: JSON.stringify(result)
+												
+											},
+											success: function(json) {
+												
+												if(json.validate){
+												$("#resultado").html("");
+												var i=0;
+													$.each(json.datos, function( index, registro ) {
+													i++;
+														sqlite.open(function(err) {
+															//alert('Connection opened');
+															if (err) throw err;
+															sqlite.query('UPDATE EstudiosJojutla set estatus=?, idbd='+registro.id+' where idsqlite='+registro.sqlite+'', ["transfered"], function(err, result) {
+																if (err) throw err;
+																
+															});
+														});
+													});
+													navigator.notification.alert('Datos almacenados correctamente en el servidor.\nSe registraron '+i+' encuestas.', "", 'Información', 'OK');
+													var body = $("html, body");
+														body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+														   location.reload();
+														});
+												
+												}else{
+													navigator.notification.alert('Su usuario y/o contraseña son incorrectos', "", 'Validación', 'OK');
+												}
+												
+												
+											},
+											error: function(json) {
+												$("#resultado").html("Error: "+json);
+												navigator.notification.alert('Los datos NO se almacenaron en el servidor.', "", 'Información', 'OK');
+													
+											},
+											
+											beforeSend: function() {
+												$("#spinner").removeClass("hidden");
+											},
+											
+											complete: function() {
+												$("#spinner").addClass("hidden");
+											}
+										});
+									
+									});
+									
+									
+									
+									
+									
+									
+									/*
+									
+									sqlite.query('Select count(idbd) as conteo from Estudios', [], function(err, res) {
+									  if (err) throw err;
+										var respuesta=res;
+										var total=res.rows[0].conteo;
+										//alert("Total "+total);
+										$("#spinner").addClass("hidden");
+										navigator.notification.alert('Estudio '+total+' registrado correctamente', "", 'Información', 'OK');
+									
+										sqlite.close(function(err) {
+										if (err) throw err;
+										var body = $("html, body");
+										body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+										   location.reload();
+										});
+										
+									  });
+									});
+									*/
+								});
+							}, function(error) {
+							navigator.notification.alert('Su geolocalizador no se encuentra activo', "", 'Información', 'OK');
+									
+								sqlite.query('INSERT INTO EstudiosJojutla VALUES (?,?,?,??,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[total, 0, 'Geo failed', 'registered', generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado], function(err, res) {
+									if (err) throw err;
+									sqlite.query('Select count(idbd) as conteo from EstudiosJojutla', [], function(err, res) {
+									  if (err) throw err;
+										var respuesta=res;
+										var total=res.rows[0].conteo;
+										//alert("Total "+total);
+										$("#spinner").addClass("hidden");
+										navigator.notification.alert('Estudio '+total+' registrado correctamente', "", 'Información', 'OK');
+									
+										sqlite.close(function(err) {
+										if (err) throw err;
+										var body = $("html, body");
+										body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+										   location.reload();
+										});
+										
+									  });
+									});
+								});
+							});
+						} else {
+						//alert("guardando con geo erroneo");
+							sqlite.query('INSERT INTO EstudiosJojutla VALUES (?,?,?,??,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[total, 0, 'Geo not supported', 'registered', generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado], function(err, res) {
+											if (err) throw err;
+									sqlite.query('Select count(idbd) as conteo from EstudiosJojutla', [], function(err, res) {
+									  if (err) throw err;
+										var respuesta=res;
+										var total=res.rows[0].conteo;
+										//alert("Total "+total);
+										$("#spinner").addClass("hidden");
+										navigator.notification.alert('Estudio '+total+' registrado correctamente', "", 'Información', 'OK');
+									
+										sqlite.close(function(err) {
+										if (err) throw err;
+										var body = $("html, body");
+										body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+										   location.reload();
+										});
+										
+									  });
+									});
+								});
+						}
+						
+							
+							
+							
+							
+					
+					 });
+				  });
+				
+
+            }
+        });
+		
+		
+		
+		
+function getgeolocation(){
+	alert("geo");
+	
+}
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    return 'Error: The Geolocation service failed.';
+  } else {
+    return 'Error: Your browser doesnt support geolocation.';
+  }
+
+}
+		</script>
+	</body>
+</html>
