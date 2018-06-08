@@ -3,16 +3,16 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.encuestamorelos2017"
+        id        = "com.phonegap.encuestajojutla2018"
         version   = "1.0.0">
 
-    <name>TENDENCIAS DE OPINIÓN CIUDADANA</name>
+    <name>Jojutla 2018</name>
 
     <description>
         App para aplicar un estudio de opinión
     </description>
 
-    <author href="http://www.etpsoluciones.com.mx/" email="enrique.hdez.cortes@gmail.com">
+    <author href="http://www.etpsoluciones.com" email="enrique.hdez.cortes@gmail.com">
         Estrategia, Tecnología y Procesos
     </author>
 
