@@ -76,7 +76,17 @@
 						  
 							
 	
-							$("#resultado").html("Total: "+total+"<br><br>"+JSON.stringify(result));
+							$("#resultado").html("Total: "+total+"<br><br>");
+							resultado=JSON.stringify(result));
+							$.each(result, function( index, dato ) {
+								if(dato.estatus="transfered"){
+									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido");
+								}else{
+									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Local");
+								}
+							};
+							
+							
 							//alert(JSON.stringify(res));
 							sqlite.close(function(err) {
 							if (err) throw err;
@@ -192,7 +202,7 @@
 											},
 											error: function(json) {
 												$("#resultado").html("Error: "+json);
-												alert("hubo un error");
+												alert("hubo un error"+json);
 										}
 										});
 	  
