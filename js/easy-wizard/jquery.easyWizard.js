@@ -183,7 +183,11 @@
 					//alert("q1");
 					navigator.notification.alert('Debe responder la pregunta 7', "", 'Validación', 'OK');
 					$('#opinionalcalde1').focus();
-				} else if ($('#problemas1').val()=="") {
+				}else{
+					puedeseguir=true;
+				}
+			}else if(pasoactivo==4){
+				if ($('#problemas1').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 8', "", 'Validación', 'OK');
 					$('#problemas1').focus();
 				} else if ($('#problemas2').val()=="") {
@@ -192,7 +196,12 @@
 				} else if ($('#problemas3').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 8', "", 'Validación', 'OK');
 					$('#problemas3').focus();
-				} else if ($('#segurovoto').val()=="") {
+				}else{
+					puedeseguir=true;
+				}
+			}else if(pasoactivo==5){	
+					
+				if ($('#segurovoto').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 9', "", 'Validación', 'OK');
 					$('#segurovoto').focus();
 				} else if ($("input[name='votopresidente']:checked").val() == "" || $("input[name='votopresidente']:checked").val() == undefined) {
@@ -231,7 +240,7 @@
 					navigator.notification.alert('Debe responder la pregunta 16.1', "", 'Validación', 'OK');
 					$('#opinionRobertoCordova1').focus();
 			
-			} else if ($("input[name='conoceAraceliGarduno']:checked").val() == "" || $("input[name='conoceAraceliGarduno']:checked").val() == undefined) {
+				} else if ($("input[name='conoceAraceliGarduno']:checked").val() == "" || $("input[name='conoceAraceliGarduno']:checked").val() == undefined) {
 					//alert("q1");
 					navigator.notification.alert('Debe responder la pregunta 16.2', "", 'Validación', 'OK');
 					$('#conoceAraceliGarduno1').focus();
@@ -386,7 +395,7 @@
 					puedeseguir=true;
 				}
 			
-			}else if(pasoactivo==4){
+			}else if(pasoactivo==6){
 				if ($("input[name='propuesta1']:checked").val() == "" || $("input[name='propuesta1']:checked").val() == undefined) {
 					//alert("q1");
 					navigator.notification.alert('Debe responder la pregunta 24.1', "", 'Validación', 'OK');
