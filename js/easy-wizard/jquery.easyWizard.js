@@ -246,7 +246,7 @@
 					$('#conoceAraceliGarduno1').focus();
 				} else if ($('#partidoAraceliGarduno').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.2', "", 'Validación', 'OK');
-					$('#partidoAraceliGarduno1').focus();
+					$('#partidoAraceliGarduno').focus();
 				
 				} else if ($("input[name='opinionAraceliGarduno']:checked").val() == "" || $("input[name='opinionAraceliGarduno']:checked").val() == undefined) {
 					//alert("q1");
@@ -258,7 +258,7 @@
 					$('#conoceFranciscoEspin1').focus();
 				} else if ($('#partidoFranciscoEspin').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.3', "", 'Validación', 'OK');
-					$('#partidoFranciscoEspin1').focus();
+					$('#partidoFranciscoEspin').focus();
 				
 				} else if ($("input[name='opinionFranciscoEspin']:checked").val() == "" || $("input[name='opinionFranciscoEspin']:checked").val() == undefined) {
 					//alert("q1");
@@ -270,7 +270,7 @@
 					$('#conoceGerardoSanchez1').focus();
 				} else if ($('#partidoGerardoSanchez').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.4', "", 'Validación', 'OK');
-					$('#partidoGerardoSanchez1').focus();
+					$('#partidoGerardoSanchez').focus();
 				
 				} else if ($("input[name='opinionGerardoSanchez']:checked").val() == "" || $("input[name='opinionGerardoSanchez']:checked").val() == undefined) {
 					//alert("q1");
@@ -282,7 +282,7 @@
 					$('#conoceJuanAngel1').focus();
 				} else if ($('#partidoJuanAngel').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.5', "", 'Validación', 'OK');
-					$('#partidoJuanAngel1').focus();
+					$('#partidoJuanAngel').focus();
 				
 				} else if ($("input[name='opinionJuanAngel']:checked").val() == "" || $("input[name='opinionJuanAngel']:checked").val() == undefined) {
 					//alert("q1");
@@ -294,7 +294,7 @@
 					$('#conoceEzequielCastrejon1').focus();
 				} else if ($('#partidoEzequielCastrejon').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.6', "", 'Validación', 'OK');
-					$('#partidoEzequielCastrejon1').focus();
+					$('#partidoEzequielCastrejon').focus();
 				
 				} else if ($("input[name='opinionEzequielCastrejon']:checked").val() == "" || $("input[name='opinionEzequielCastrejon']:checked").val() == undefined) {
 					//alert("q1");
@@ -306,7 +306,7 @@
 					$('#conoceConcepcionAguilar1').focus();
 				} else if ($('#partidoConcepcionAguilar').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.7', "", 'Validación', 'OK');
-					$('#partidoConcepcionAguilar1').focus();
+					$('#partidoConcepcionAguilar').focus();
 				
 				} else if ($("input[name='opinionConcepcionAguilar']:checked").val() == "" || $("input[name='opinionConcepcionAguilar']:checked").val() == undefined) {
 					//alert("q1");
@@ -318,7 +318,7 @@
 					$('#conoceCarlosNavarro1').focus();
 				} else if ($('#partidoCarlosNavarro').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.8', "", 'Validación', 'OK');
-					$('#partidoCarlosNavarro1').focus();
+					$('#partidoCarlosNavarro').focus();
 				
 				} else if ($("input[name='opinionCarlosNavarro']:checked").val() == "" || $("input[name='opinionCarlosNavarro']:checked").val() == undefined) {
 					//alert("q1");
@@ -330,7 +330,7 @@
 					$('#conoceCarlosBrito1').focus();
 				} else if ($('#partidoCarlosBrito').val()=="") {
                     navigator.notification.alert('Debe responder la pregunta 16.9', "", 'Validación', 'OK');
-					$('#partidoCarlosBrito1').focus();
+					$('#partidoCarlosBrito').focus();
 				
 				} else if ($("input[name='opinionCarlosBrito']:checked").val() == "" || $("input[name='opinionCarlosBrito']:checked").val() == undefined) {
 					//alert("q1");

@@ -63,7 +63,7 @@
 	$("#cargar3").on("click",function(event){
 	$("#resultado").html("vacío");
 		var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-		var sqlite = new SQLite('tendenciasmorelosbd2');
+		var sqlite = new SQLite('tendenciasjiutepec');
 		sqlite.open(function(err) {
 		//alert('Connection opened');
 		if (err) throw err;
@@ -141,7 +141,7 @@
 	
 		
 	var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-		var sqlite = new SQLite('tendenciasmorelosbd2');
+		var sqlite = new SQLite('tendenciasjiutepec');
 		sqlite.open(function(err) {
 		//alert('Connection opened');
 		if (err) throw err;
