@@ -151,7 +151,7 @@
 						var total=res.rows[0].conteo;
 						sqlite.query('Select * from EstudiosJojutla where estatus=?', ["registered"], function(err, result) {
 						  if (err) throw err;
-							//alert("ok con la extraccion de bd");
+							alert("ok con la extraccion de bd");
 					$.each(result.rows, function( index, registro ) {
 			  //alert("registro="+registro.idsqlite);
 							
@@ -170,7 +170,7 @@
 												
 											},
 											success: function(json) {
-												//alert("envío ok");
+												alert("envío ok");
 												if(json.validate && json.datos.id!=""){
 													sqlite.open(function(err) {
 															//alert('Connection opened');

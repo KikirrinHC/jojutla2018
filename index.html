@@ -1991,7 +1991,7 @@ $("#mismopartido").slider({
 											//contentType: 'multipart/form-data',
 											//processData: false,
 											data: {
-												accion: "saveMunguia",
+												accion: "save",
 												user: $("#usr").val(),
 												pass: $("#pwd").val(),
 												valores: JSON.stringify(result)
@@ -2026,9 +2026,12 @@ $("#mismopartido").slider({
 												
 											},
 											error: function(json) {
-												$("#resultado").html("Error: "+json);
+												
 												navigator.notification.alert('Los datos NO se almacenaron en el servidor.', "", 'Información', 'OK');
-													
+												var body = $("html, body");
+														body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+														   location.reload();
+														});	
 											},
 											
 											beforeSend: function() {
