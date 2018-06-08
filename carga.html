@@ -163,7 +163,7 @@
 						  if (err) throw err;
 							//alert("ok con la extraccion de bd");
 					$.each(result.rows, function( index, registro ) {
-			  alert("registro="+registro);
+			  alert("registro="+JSON.stringify(registro));
 							
 							$.ajax({
 											cache: false,
@@ -181,8 +181,9 @@
 											},
 											success: function(json) {
 												alert("envío ok="+JSON.stringify(json));
-												if(json.validate && (json.datos.id!="" && json.datos.id!=undefined)){
-													sqlite.open(function(err) {
+												if(json.validate ){
+														if (json.datos.id!="" && json.datos.id!=undefined){
+														sqlite.open(function(err) {
 															alert('Connection opened');
 															if (err) throw err;
 															sqlite.query('UPDATE EstudiosJojutla set estatus=?, idbd='+json.datos.id+' where idsqlite='+json.datos.sqlite+'', ["transfered"], function(err, result) {
@@ -191,8 +192,10 @@
 															});
 														});
 														$("#resultado").append("ok local "+json.datos.id);
-													navigator.notification.alert('Datos almacenados correctamente', "", 'Información', 'OK');
-													
+														navigator.notification.alert('Datos almacenados correctamente', "", 'Información', 'OK');
+													}else{
+														navigator.notification.alert('Hubo un error al almacenar los datos', "", 'Validación', 'OK');
+													}
 												}else{
 												//alert("hubo un error con algo");
 													navigator.notification.alert('Su usuario y/o contraseña son incorrectos', "", 'Validación', 'OK');
