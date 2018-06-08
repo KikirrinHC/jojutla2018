@@ -1935,7 +1935,7 @@ $("#mismopartido").slider({
 			var barrioencuestado=$("#barrioencuestado").val();
 			var telencuestado=$("#telencuestado").val();
 		//	generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado
-			101
+			
 			
 			
 			
@@ -1945,7 +1945,7 @@ $("#mismopartido").slider({
 				 var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
 				  var sqlite = new SQLite('tendenciasjiutepec');
 				  sqlite.open(function(err) {
-					//alert('Connection opened');
+					alert('Connection opened');
 					if (err) throw err;
 					sqlite.query('CREATE TABLE IF NOT EXISTS EstudiosJojutla (idsqlite, idbd, geo, estatus, generoEncuestado, edadEncuestado, estudiosencuestado, origenencuestado, hijosEncuestado, estadocivilEncuestado, calificacionalcalde, calificaciongobernador, calificacionpresidente, opinionalcalde, problemas1, problemas2, problemas3, problema1Cual, problema2Cual, problema3Cual, segurovoto, votopresidente, votogobernador, votosenadores, votosenado, votodiputadofederal, votodiputadolocal, conoceRobertoCordova, partidoRobertoCordova, opinionRobertoCordova, conoceAraceliGarduno, partidoAraceliGarduno, opinionAraceliGarduno, conoceFranciscoEspin, partidoFranciscoEspin, opinionFranciscoEspin, conoceGerardoSanchez, partidoGerardoSanchez, opinionGerardoSanchez, conoceJuanAngel, partidoJuanAngel, opinionJuanAngel, conoceEzequielCastrejon, partidoEzequielCastrejon, opinionEzequielCastrejon, conoceConcepcionAguilar, partidoConcepcionAguilar, opinionConcepcionAguilar, conoceCarlosNavarro, partidoCarlosNavarro, opinionCarlosNavarro, conoceCarlosBrito, partidoCarlosBrito, opinionCarlosBrito, partidoalcalde, votoalcalde, votootroalcalde, repartirvotoJuanAngel, repartirvotoEzequielCastrejon, repartirvotoCarlosBrito, repartirvotoGerardoSanchez, repartirvotoRobertoCordova, repartirvotoFranciscoEspin, repartirvotoConcepcionAguilar, repartirvotoCarlosNavarro, repartirvotoNulo, repartirvotoBlanco, ganaralcalde, mejorciudad, partidocapaz, propuesta1, propuestaImportante1, propuesta2, propuestaImportante2, propuesta3, propuestaImportante3, propuesta4, propuestaImportante4, propuesta5, propuestaImportante5, propuesta6, propuestaImportante6, propuesta7, propuestaImportante7, propuesta8, propuestaImportante8, propuesta9, propuestaImportante9, propuesta10, propuestaImportante10, propuesta11, propuestaImportante11, propuesta12, propuestaImportante12, cumpliralcalde, impresionroberto, impresionalfonso, terremoto, mismopartido, seccionEncuestado, ciudadencuestado, municipioencuestado, nombreencuestado, barrioencuestado, telencuestado)', function(err, res) {
 					  if (err) throw err;
@@ -1956,7 +1956,7 @@ $("#mismopartido").slider({
 						var respuesta=res;
 						var total=res.rows[0].conteo;
 						total=total+1;
-						//alert(total);
+						alert(total);
 						
 						if(navigator.geolocation) {
 							navigator.geolocation.getCurrentPosition(function(position) {
