@@ -82,7 +82,7 @@
 								
 							$.each(result.rows, function( index, dato ) {
 								if(dato.estatus=="transfered"){
-									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido<br>");
+									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido con el id "+dato.idbd+"<br>");
 								}else{
 									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Local<br>");
 								}
