@@ -79,11 +79,9 @@
 							$("#resultado").html("Total: "+total+"<br><br>"+JSON.stringify(result));
 							
 							
-							$("#resultado").html("Total: "+total+"<br><br>");
-							resultado=JSON.stringify(result);
 							$.each(result, function( index, dato ) {
-							alert(dato);
 								if(dato.estatus="transfered"){
+								("#resultado").append("dato:"+dato);
 									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido");
 								}else{
 									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Local");
