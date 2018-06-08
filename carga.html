@@ -78,13 +78,13 @@
 	
 							$("#resultado").html("Total: "+total+"<br><br>"+JSON.stringify(result));
 							
-							
+							$("#resultado").html("");
 								
 							$.each(result.rows, function( index, dato ) {
-								if(dato.estatus="transfered"){
-									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido");
+								if(dato.estatus=="transfered"){
+									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Transferido<br>");
 								}else{
-									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Local");
+									$("#resultado").append("Encuesta "+dato.idsqlite+" - Estado: Local<br>");
 								}
 							});
 							//alert(JSON.stringify(res));
