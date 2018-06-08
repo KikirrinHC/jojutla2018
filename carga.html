@@ -180,8 +180,8 @@
 												
 											},
 											success: function(json) {
-												alert("envío ok="+json.datos);
-												if(json.validate && (json.datos.id!="" && json.datos.id!=null)){
+												alert("envío ok="+JSON.stringify(json));
+												if(json.validate && (json.datos.id!="" && json.datos.id!=undefined)){
 													sqlite.open(function(err) {
 															alert('Connection opened');
 															if (err) throw err;
