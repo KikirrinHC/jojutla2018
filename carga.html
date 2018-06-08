@@ -122,7 +122,7 @@
 												
 											},
 											success: function(json) {
-												alert("envío ok");
+												//alert("envío ok");
 												if(json.validate){
 													
 														$("#resultado").append("ok local "+json.datos.sqlite+"="+json.datos.id);
@@ -180,7 +180,7 @@
 												
 											},
 											success: function(json) {
-												alert("envío ok");
+												//alert("envío ok");
 												if(json.validate && json.datos.id!=""){
 													sqlite.open(function(err) {
 															//alert('Connection opened');
