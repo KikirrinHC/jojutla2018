@@ -2110,6 +2110,7 @@ $("#mismopartido").slider({
 			
 			
 			$("#spinner").removeClass("hidden");
+			$(".submit").addClass("hidden");
 				//
 				 var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
 				  var sqlite = new SQLite('tendenciasjiutepec');
@@ -2193,10 +2194,14 @@ $("#mismopartido").slider({
 											
 											beforeSend: function() {
 												$("#spinner").removeClass("hidden");
+												
+			$(".submit").addClass("hidden");
 											},
 											
 											complete: function() {
 												$("#spinner").addClass("hidden");
+												
+			$(".submit").removeClass("hidden");
 											}
 										});
 									
@@ -2241,6 +2246,8 @@ $("#mismopartido").slider({
 										var total=res.rows[0].conteo;
 										//alert("Total "+total);
 										$("#spinner").addClass("hidden");
+										
+			$(".submit").removeClass("hidden");
 										navigator.notification.alert('Estudio '+total+' registrado correctamente', "", 'Información', 'OK');
 									
 										sqlite.close(function(err) {
@@ -2264,6 +2271,8 @@ $("#mismopartido").slider({
 										var total=res.rows[0].conteo;
 										//alert("Total "+total);
 										$("#spinner").addClass("hidden");
+										
+			$(".submit").removeClass("hidden");
 										navigator.notification.alert('Estudio '+total+' registrado correctamente', "", 'Información', 'OK');
 									
 										sqlite.close(function(err) {
