@@ -37,7 +37,9 @@ header {
     -moz-border-radius: 0px;
     border-radius: 0px;
 }
-
+.logopartido{
+	min-width: 65px;
+}
 .btn {
     display: inline-block;
     padding: 6px 12px;
